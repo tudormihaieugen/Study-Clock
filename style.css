@@ -1,0 +1,121 @@
+/* by ionescuig */
+* {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+}
+
+@font-face {
+  font-family: Digital-7;
+  src: url(digital-7.regular.ttf);
+}
+
+button {
+  font-size: 20px;
+  color: #ddd;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-shadow: 0 0 5px #3a729a, 0 0 10px #3a729a, 0 0 15px #3a729a;
+  opacity: 50%;
+}
+
+button:active {
+  color: #3a729a;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #111;
+}
+
+#app #container {
+  display: flex;
+  flex-direction: column;
+  color: #ddd;
+  margin: 10px;
+  padding: 5px;
+}
+
+#app #container h1 {
+  margin-top: 25px;
+  font-size: 57px;
+}
+
+#app #container #time-set {
+  display: flex;
+  justify-content: center;
+}
+
+#app #container #time-set #time-session, #app #container #time-set #time-break {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  font-size: 25px;
+}
+
+#app #container #time-set p {
+  margin-right: 10px;
+}
+
+#app #container #time-set h3 {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 400;
+}
+
+#app #container #time-set #session-length, #app #container #time-set #break-length {
+  background: linear-gradient(to bottom, #003300 0%, #009933 100%);
+  border-radius: 5px;
+}
+
+#app #container #display {
+  background: linear-gradient(to bottom, #003300 0%, #339966 100%);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border-radius: 100px;
+  font-size: 25px;
+}
+
+#app #container #display #time-left {
+  font-family: "Digital-7";
+  font-size: 75px;
+}
+
+@media (max-width: 600px) {
+  #app #container h1 {
+    margin-top: 15px;
+    font-size: 45px;
+  }
+  #app #container #time-set {
+    display: flex;
+    justify-content: center;
+  }
+  #app #container #time-set #time-session, #app #container #time-set #time-break {
+    margin: 5px 10px;
+    font-size: 15px;
+  }
+  #app #container #time-set h3 {
+    font-size: 15px;
+    padding: 10px;
+  }
+  #app #container #display {
+    width: 300px;
+    padding: 20px;
+  }
+  #app #container #display #time-left {
+    font-size: 120px;
+  }
+}
